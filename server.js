@@ -5,7 +5,8 @@ const mongoose=require('mongoose');
 const dotenv=require("dotenv");
 
 dotenv.config();
-
+//BodyParsing
+app.use(express.urlencoded({extended: false}));
 
 //Mongo DB connection
 
